@@ -1,5 +1,5 @@
-# UserStack
-UserStack is a full-stack web application for creating, managing, and storing user data. The application assigns unique IDs to each user and displays the data in an interactive tile-based format. Built with a modern tech stack for scalability, consistency, and performance.
+# UserStack: Interactive User Management with Tiles
+**UserStack** is a full-stack web application for creating, managing, and storing user data. The application assigns unique IDs to each user and displays the data in an interactive tile-based format. Built with a modern tech stack for scalability, consistency, and performance.
 
 ## Features
 - Create, update, and delete users with ease.
@@ -43,13 +43,13 @@ UserStack is a full-stack web application for creating, managing, and storing us
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/U-Snap.git
-   cd U-Snap
+   git clone https://github.com/yourusername/UserStack.git
+   cd Userstack
    ```
 2. Build and run the backend using Docker:
    ```bash
-   docker build -t u-snap-backend -f backend/go.dockerfile .
-   docker run -p 8000:8000 u-snap-backend
+   docker build -t userstack-backend -f backend/go.dockerfile .
+   docker run -p 8000:8000 userstack-backend
    ```
 ### Frontend Setup
 1. Navigate to the frontend folder:
@@ -72,7 +72,7 @@ UserStack is a full-stack web application for creating, managing, and storing us
 1. Set up PostgreSQL and create a database:
    ```bash
    psql -U postgres
-   CREATE DATABASE u_snap_db;
+   CREATE DATABASE userstack_db;
    ```
 2. Update the connection string in the Go backend or use Docker with environment variables to point to the database.
 
